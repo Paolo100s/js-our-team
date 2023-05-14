@@ -53,14 +53,27 @@ const members = [
     }
 ]
 
-// Ciclo for
+// console.log(members[0].nome);
+// console.log(members[2]["ruolo"]);
+
+// Ciclo for (ogni elemento dell'array)
 for (let i = 0; i < members.length; i++) {
     const element = members[i];
     // console.log(element);
     
-    // Ciclo for..in
+    // Ciclo for..in (valore di ogni chiave)
     for (let key in element) {
-        console.log(element[key]);
+        // console.log(element[key]);
+
+    // Stampa delle informazioni su DOM 
+    let object = document.createElement('div');
+    object.classList.add("object");
+    object.append(element[key]);
+    console.log(object);
+
+    const container = document.getElementById("container");
+    container.append(object);
     }
     
 }
+
