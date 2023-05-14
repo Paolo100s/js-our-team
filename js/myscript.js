@@ -52,3 +52,15 @@ const members = [
         "foto": "barbara-ramos-graphic-designer.jpg",
     }
 ]
+
+// Ciclo for
+for (let i = 0; i < members.length; i++) {
+    const element = members[i];
+    // console.log(element);
+    
+    // Ciclo for..in
+    for (let key in element) {
+        console.log(element[key]);
+    }
+    
+}
